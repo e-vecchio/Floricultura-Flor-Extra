@@ -1,0 +1,13 @@
+Coloque aqui as fotos reais tiradas durante a visita à empresa
+(fachada, produtos, arranjos, equipe, etc.), usando os mesmos
+nomes de arquivo já referenciados nas páginas HTML, por exemplo:
+
+- casamento-01.jpg
+- casamento-02.jpg
+- arranjo-01.jpg
+- arranjo-02.jpg
+- loja-fachada.jpg
+- video-poster.jpg (imagem de capa do vídeo)
+
+Se preferir usar outros nomes, lembre-se de atualizar o atributo
+"src" das tags <img> correspondentes nos arquivos .html.
