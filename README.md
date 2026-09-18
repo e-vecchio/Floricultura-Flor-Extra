@@ -8,3 +8,5 @@ Foto que comprove o contato com o entrevistado e a forma de contato utilizada (e
 Explicação do processo de desenvolvimento do site em si: decisões de estrutura, conteúdo levantado, desafios técnicos.
 
 Conclusão: reflexão do grupo sobre o resultado e aprendizados da etapa.
+
+https://e-vecchio.github.io/Floricultura-Flor-Extra/
