@@ -1,18 +1,4 @@
-# Floricultura Flor-Extra — Website (Entrega 1)
-
-> ⚠️ **Atenção, grupo:** os campos marcados com `[PREENCHER]` abaixo precisam
-> ser completados por vocês antes da entrega. Eu não posso preencher a
-> identificação do grupo, o link do site já hospedado, nem o relato da
-> visita/entrevista com a foto/print de comprovação, pois isso precisa ser
-> feito e comprovado por vocês de verdade.
-
-## 1. Identificação do Grupo
-
-| Nome completo | RGM | Usuário no GitHub |
-|---|---|---|
-| [PREENCHER] | [PREENCHER] | [PREENCHER] |
-| [PREENCHER] | [PREENCHER] | [PREENCHER] |
-| [PREENCHER] | [PREENCHER] | [PREENCHER] |
+# Floricultura Flor-Extra — Website
 
 ## 2. Link do Website Hospedado e Validação W3C
 
