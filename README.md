@@ -1,8 +1,13 @@
 Nomes dos alunos do grupo:
+
 Enzo Rocha Vecchio
+
 Douglas de Siqueira Vicente
+
 Henrique Santos Brunheiro
+
 Maria Eduarda Lima Pereira
+
 Murilo Queiroz Braga
 
 ## Introdução
