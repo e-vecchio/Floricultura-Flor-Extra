@@ -52,6 +52,7 @@ seções de Serviços, Casamentos, Eventos Corporativos e Jardinagem.
 ### Comprovação do contato
 
 <img width="240" height="180" alt="WhatsApp Image 2026-09-18 at 10 00 15" src="https://github.com/user-attachments/assets/324d1e5e-787d-464b-ae06-20ebaae3dced" />
+<img width="240" height="180" alt="Imagem do contato" src="https://github.com/user-attachments/assets/7887acf1-dd84-43be-be6a-effc1150446e" />
 
 ### Processo de desenvolvimento do site
 
