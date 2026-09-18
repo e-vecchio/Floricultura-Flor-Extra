@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato | Floricultura Flor-Extra</title>
+    <meta name="description" content="Fale com a Floricultura Flor-Extra: telefone, WhatsApp e formulário de contato.">
+</head>
+<body>
+    <header>
+        <h1><a href="index.html">Floricultura Flor-Extra</a></h1>
+        <p>Flores frescas e decoração floral em São Paulo</p>
+        <nav aria-label="Navegação principal">
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="sobre.html">Sobre Nós</a></li>
+                <li><a href="servicos.html">Serviços</a></li>
+                <li><a href="casamentos.html">Casamentos</a></li>
+                <li><a href="buques.html">Buquês</a></li>
+                <li><a href="eventos-corporativos.html">Eventos Corporativos</a></li>
+                <li><a href="jardinagem.html">Plantas &amp; Jardinagem</a></li>
+                <li><a href="galeria.html">Galeria</a></li>
+                <li><a href="orcamento.html">Orçamento</a></li>
+                <li><a href="contato.html" aria-current="page">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section aria-labelledby="titulo-contato">
+            <h2 id="titulo-contato">Fale Conosco</h2>
+            <p>
+                Tem alguma dúvida ou quer saber mais sobre nossos serviços? Preencha o formulário
+                abaixo ou utilize um dos nossos canais de atendimento.
+            </p>
+
+            <address>
+                Floricultura Flor-Extra<br>
+                R. Itinguçu, 639 - Vila Ré, São Paulo - SP, 03658-010<br>
+                Telefone: <a href="tel:+551126822645">(11) 2682-2645</a><br>
+                WhatsApp: <a href="https://wa.me/5511958748311">+55 11 95874-8311</a><br>
+                Horário de atendimento: Segunda a Sábado, 08h às 20h
+            </address>
+        </section>
+
+        <section aria-labelledby="audio-institucional">
+            <h2 id="audio-institucional">Ouça Nossa Mensagem de Boas-Vindas</h2>
+            <figure>
+                <audio controls preload="metadata">
+                    <source src="assets/audio/boas-vindas-florextra.mp3" type="audio/mpeg">
+                    <source src="assets/audio/boas-vindas-florextra.ogg" type="audio/ogg">
+                    Seu navegador não suporta a reprodução de áudio. Você pode
+                    <a href="assets/audio/boas-vindas-florextra.mp3">baixar o áudio aqui</a>.
+                </audio>
+                <figcaption>Mensagem de boas-vindas da equipe Flor-Extra (áudio institucional).</figcaption>
+            </figure>
+        </section>
+
+        <section aria-labelledby="formulario-contato">
+            <h2 id="formulario-contato">Formulário de Contato</h2>
+
+            <form action="#" method="post" id="form-contato">
+                <p>
+                    <label for="cont-nome">Nome completo *</label><br>
+                    <input type="text" id="cont-nome" name="nome" required minlength="3" maxlength="80"
+                           placeholder="Seu nome completo" autocomplete="name">
+                </p>
+
+                <p>
+                    <label for="cont-email">E-mail *</label><br>
+                    <input type="email" id="cont-email" name="email" required
+                           placeholder="voce@exemplo.com" autocomplete="email">
+                </p>
+
+                <p>
+                    <label for="cont-telefone">Telefone *</label><br>
+                    <input type="tel" id="cont-telefone" name="telefone" required
+                           pattern="\(\d{2}\)\s?\d{4,5}-\d{4}"
+                           placeholder="(11) 91234-5678"
+                           title="Formato esperado: (11) 91234-5678"
+                           autocomplete="tel">
+                </p>
+
+                <p>
+                    <label for="cont-assunto">Assunto *</label><br>
+                    <select id="cont-assunto" name="assunto" required>
+                        <option value="">Selecione um assunto</option>
+                        <option value="duvida">Dúvida sobre produtos/serviços</option>
+                        <option value="orcamento">Orçamento</option>
+                        <option value="reclamacao">Reclamação</option>
+                        <option value="elogio">Elogio</option>
+                        <option value="outro">Outro</option>
+                    </select>
+                </p>
+
+                <p>
+                    <label for="cont-mensagem">Mensagem *</label><br>
+                    <textarea id="cont-mensagem" name="mensagem" rows="6" cols="40" required
+                              minlength="10" maxlength="600"
+                              placeholder="Escreva sua mensagem aqui..."></textarea>
+                </p>
+
+                <p>
+                    <label for="cont-newsletter">
+                        <input type="checkbox" id="cont-newsletter" name="newsletter" value="sim">
+                        Quero receber novidades e promoções por e-mail
+                    </label>
+                </p>
+
+                <p>
+                    <button type="submit">Enviar Mensagem</button>
+                    <button type="reset">Limpar</button>
+                </p>
+            </form>
+        </section>
+
+        <section aria-labelledby="localizacao">
+            <h2 id="localizacao">Como Chegar</h2>
+            <p>
+                Estamos localizados na R. Itinguçu, 639 - Vila Ré, São Paulo - SP, CEP 03658-010.
+            </p>
+            <p>
+                <a href="https://www.google.com/maps/search/?api=1&amp;query=R.+Itingu%C3%A7u%2C+639+-+Vila+R%C3%A9%2C+S%C3%A3o+Paulo+-+SP%2C+03658-010">
+                    Ver no Google Maps
+                </a>
+            </p>
+        </section>
+    </main>
+
+    <footer>
+        <address>
+            Floricultura Flor-Extra<br>
+            R. Itinguçu, 639 - Vila Ré, São Paulo - SP, 03658-010<br>
+            Telefone: <a href="tel:+551126822645">(11) 2682-2645</a><br>
+            WhatsApp: <a href="https://wa.me/5511958748311">+55 11 95874-8311</a>
+        </address>
+        <nav aria-label="Links do rodapé">
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="orcamento.html">Orçamento</a></li>
+            </ul>
+        </nav>
+        <p><small>&copy; 2026 Floricultura Flor-Extra. Trabalho acadêmico - Entrega 1 (estrutura HTML, sem CSS).</small></p>
+    </footer>
+</body>
+</html>
