@@ -8,7 +8,7 @@ Henrique Santos Brunheiro
 
 Maria Eduarda Lima Pereira
 
-Murillo Queiroz Braga
+Murilo Queiroz Braga
 
 ### Link do Site:
 
