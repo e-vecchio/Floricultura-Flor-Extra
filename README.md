@@ -80,7 +80,10 @@ Publicar o site no GitHub Pages e entender o funcionamento do processo de
   no ar, já que testar o link rápido demais pode mostrar uma versão antiga
   da página ou simplesmente dar o famoso erro 404.
 
-  
+## W3C Validator
+
+## CSS Validation Service
+
 ## Conclusão
 
 
