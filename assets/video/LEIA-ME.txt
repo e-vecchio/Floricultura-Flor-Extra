@@ -1,0 +1,10 @@
+Coloque aqui os vídeos reais gravados durante a visita/entrevista
+com a empresa, usando os mesmos nomes já referenciados no HTML:
+
+- apresentacao-florextra.mp4 / .webm (usado em index.html)
+- dia-a-dia-florextra.mp4 / .webm (usado em galeria.html)
+
+Arquivos .vtt são opcionais e servem para legendas (tag <track>).
+Recomenda-se comprimir os vídeos antes de subir para o GitHub,
+já que o GitHub tem limite de tamanho de arquivo (recomendado
+até 100 MB por arquivo, idealmente bem menos que isso).

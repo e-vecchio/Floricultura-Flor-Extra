@@ -1,0 +1,653 @@
+/* ==========================================================================
+   Floricultura Flor-Extra — folha de estilos única (Entrega 2)
+
+   Sumário
+   1. Tokens (paleta, tipografia, medidas)
+   2. Base e acessibilidade
+   3. Estrutura da página (Grid)
+   4. Cabeçalho e navegação (Flexbox)
+   5. Conteúdo: títulos, texto, listas e definições
+   6. Componentes: cards, mídia, tabela, botões, selos
+   7. Formulários
+   8. Rodapé
+   9. Responsivo
+   ========================================================================== */
+
+/* 1. Tokens ---------------------------------------------------------------- */
+:root {
+  --cor-rosa: #a82a55;
+  --cor-rosa-escuro: #861f43;
+  --cor-rosa-claro: #f8e3e9;
+  --cor-verde: #2f5d3f;
+  --cor-verde-escuro: #1f3f2b;
+  --cor-verde-claro: #e4efe6;
+  --cor-creme: #fbf5f1;
+  --cor-superficie: #fff;
+  --cor-texto: #2a2a2a;
+  --cor-texto-suave: #5a5a5a;
+  --cor-borda: #e3d5cf;
+  --cor-controle: #8c7b74;
+  --cor-erro: #b3261e;
+  --cor-sucesso: #1f6b3a;
+
+  --fonte-titulo: "Playfair Display", Georgia, "Times New Roman", serif;
+  --fonte-texto: "Nunito Sans", "Segoe UI", Arial, sans-serif;
+
+  --raio: 0.75rem;
+  --sombra: 0 2px 12px rgba(47, 93, 63, 0.12);
+  --transicao: 0.2s ease;
+
+  /* margem flexível | metade esquerda | metade direita | margem flexível */
+  --colunas-pagina: minmax(1rem, 1fr) repeat(2, minmax(0, 35rem)) minmax(1rem, 1fr);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  :root {
+    --transicao: 0s;
+  }
+}
+
+/* 2. Base e acessibilidade ------------------------------------------------- */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  min-height: 100vh;
+  margin: 0;
+  background: var(--cor-creme);
+  color: var(--cor-texto);
+  font-family: var(--fonte-texto);
+  font-size: 1.0625rem;
+  line-height: 1.65;
+}
+
+a {
+  color: var(--cor-rosa);
+  text-underline-offset: 0.2em;
+  transition: color var(--transicao);
+}
+
+a:hover {
+  color: var(--cor-rosa-escuro);
+}
+
+:focus {
+  outline: 3px solid var(--cor-verde);
+  outline-offset: 2px;
+}
+
+img,
+video,
+audio {
+  display: block;
+  max-width: 100%;
+}
+
+[hidden] {
+  display: none;
+}
+
+/* 3. Estrutura da página (Grid) -------------------------------------------- */
+header,
+main,
+footer {
+  display: grid;
+  grid-template-columns: var(--colunas-pagina);
+}
+
+header > *,
+main > * {
+  grid-column: 2 / 4;
+}
+
+main {
+  align-content: start;
+  row-gap: 1.5rem;
+  padding: 2rem 0 3rem;
+}
+
+/* 4. Cabeçalho e navegação (Flexbox) --------------------------------------- */
+header {
+  padding-top: 1.25rem;
+  background: var(--cor-superficie);
+  border-bottom: 1px solid var(--cor-borda);
+}
+
+header h1 {
+  margin: 0;
+  font-family: var(--fonte-titulo);
+  font-size: 1.9rem;
+  line-height: 1.2;
+}
+
+header h1 a {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  color: var(--cor-verde-escuro);
+  text-decoration: none;
+}
+
+header h1 img {
+  width: 3rem;
+  height: 3rem;
+}
+
+header > p {
+  margin: 0.15rem 0 0.9rem;
+  color: var(--cor-texto-suave);
+}
+
+nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.2rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+header nav {
+  padding: 0.6rem 0 0.8rem;
+  border-top: 1px solid var(--cor-borda);
+}
+
+nav a {
+  display: block;
+  padding: 0.4rem 0.7rem;
+  border-radius: 999px;
+  color: var(--cor-verde-escuro);
+  font-size: 0.95rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background-color var(--transicao), color var(--transicao);
+}
+
+nav a:hover {
+  background: var(--cor-verde-claro);
+  color: var(--cor-verde-escuro);
+}
+
+nav a[aria-current="page"] {
+  background: var(--cor-verde);
+  color: var(--cor-superficie);
+}
+
+/* botão do menu criado pelo JavaScript (visível só em telas pequenas) */
+.nav-toggle {
+  display: none;
+}
+
+/* 5. Conteúdo: títulos, texto, listas e definições ------------------------- */
+h2,
+h3 {
+  margin: 0;
+  font-family: var(--fonte-titulo);
+  line-height: 1.25;
+}
+
+h2 {
+  color: var(--cor-verde-escuro);
+  font-size: 1.6rem;
+}
+
+h2::after {
+  display: block;
+  width: 3rem;
+  height: 3px;
+  margin-top: 0.5rem;
+  background: var(--cor-rosa);
+  border-radius: 2px;
+  content: "";
+}
+
+h3 {
+  margin-bottom: 0.4rem;
+  color: var(--cor-rosa-escuro);
+  font-size: 1.2rem;
+}
+
+p {
+  margin: 0;
+}
+
+address {
+  font-style: normal;
+}
+
+main ul,
+main ol {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+  gap: 0.75rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  counter-reset: passo;
+}
+
+main li {
+  position: relative;
+  padding: 0.7rem 1rem 0.7rem 2.9rem;
+  background: var(--cor-creme);
+  border: 1px solid var(--cor-borda);
+  border-radius: 0.5rem;
+  counter-increment: passo;
+}
+
+main li::before {
+  position: absolute;
+  top: 0.7rem;
+  left: 1rem;
+  color: var(--cor-rosa);
+  font-weight: 700;
+}
+
+main ul > li::before {
+  content: "\273F";
+}
+
+main ol > li::before {
+  content: counter(passo) ".";
+}
+
+dl {
+  display: grid;
+  grid-template-columns: minmax(12rem, 1fr) 2fr;
+  margin: 0;
+  border-top: 1px solid var(--cor-borda);
+}
+
+dt,
+dd {
+  margin: 0;
+  padding: 0.75rem 0.5rem;
+  border-bottom: 1px solid var(--cor-borda);
+}
+
+dt {
+  color: var(--cor-verde-escuro);
+  font-weight: 700;
+}
+
+/* 6. Componentes ----------------------------------------------------------- */
+
+/* Card de seção: cada <section> / <article> direto do <main> */
+main > section,
+main > article {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  gap: 1rem 1.5rem;
+  align-content: start;
+  padding: 1.75rem;
+  background: var(--cor-superficie);
+  border: 1px solid var(--cor-borda);
+  border-radius: var(--raio);
+  box-shadow: var(--sombra);
+}
+
+/* por padrão cada filho ocupa a linha toda; cards e figuras dividem colunas */
+main > section > *,
+main > article > * {
+  grid-column: 1 / -1;
+}
+
+main > section > article,
+main > section > figure {
+  grid-column: auto;
+}
+
+main > section > figure:only-of-type {
+  grid-column: 1 / -1;
+  justify-self: center;
+  width: 100%;
+  max-width: 40rem;
+}
+
+/* Destaque da página inicial */
+main > section[aria-labelledby="boas-vindas"] {
+  padding: 2.5rem 1.75rem;
+  background: linear-gradient(135deg, var(--cor-rosa-claro), var(--cor-verde-claro));
+}
+
+main > section[aria-labelledby="boas-vindas"] h2 {
+  font-size: 2.2rem;
+}
+
+/* Card interno */
+section > article {
+  padding: 1.25rem;
+  background: var(--cor-creme);
+  border: 1px solid var(--cor-borda);
+  border-left: 4px solid var(--cor-rosa);
+  border-radius: var(--raio);
+  transition: box-shadow var(--transicao), transform var(--transicao);
+}
+
+section > article:hover {
+  box-shadow: var(--sombra);
+  transform: translateY(-2px);
+}
+
+section > article h3 a {
+  text-decoration: none;
+}
+
+/* Mídia: imagens, vídeo e áudio */
+figure {
+  margin: 0;
+  overflow: hidden;
+  background: var(--cor-creme);
+  border: 1px solid var(--cor-borda);
+  border-radius: var(--raio);
+}
+
+figure img,
+figure video {
+  width: 100%;
+  height: auto;
+  background: var(--cor-verde-claro);
+}
+
+figure audio {
+  width: 100%;
+  padding: 0.75rem;
+}
+
+figcaption {
+  padding: 0.6rem 0.9rem;
+  color: var(--cor-texto-suave);
+  font-size: 0.9rem;
+}
+
+/* Tabela */
+table {
+  width: 100%;
+  max-width: 36rem;
+  border-collapse: collapse;
+}
+
+caption {
+  padding-bottom: 0.5rem;
+  color: var(--cor-verde-escuro);
+  font-weight: 700;
+  text-align: left;
+}
+
+th,
+td {
+  padding: 0.7rem 1rem;
+  border-bottom: 1px solid var(--cor-borda);
+  text-align: left;
+}
+
+thead th {
+  background: var(--cor-verde);
+  color: var(--cor-superficie);
+}
+
+tbody th {
+  color: var(--cor-verde-escuro);
+}
+
+tbody tr:nth-child(even) {
+  background: var(--cor-creme);
+}
+
+/* Botões */
+button {
+  padding: 0.7rem 1.5rem;
+  background: var(--cor-rosa);
+  border: 2px solid var(--cor-rosa);
+  border-radius: 999px;
+  color: var(--cor-superficie);
+  font: inherit;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background-color var(--transicao), color var(--transicao);
+}
+
+button:hover {
+  background: var(--cor-rosa-escuro);
+  border-color: var(--cor-rosa-escuro);
+}
+
+button[type="reset"],
+.nav-toggle {
+  background: transparent;
+  color: var(--cor-rosa);
+}
+
+button[type="reset"]:hover,
+.nav-toggle:hover {
+  background: var(--cor-rosa-claro);
+  color: var(--cor-rosa-escuro);
+}
+
+/* Selo de status (aberto/fechado) criado pelo JavaScript */
+.selo {
+  justify-self: start;
+  padding: 0.25rem 0.9rem;
+  border-radius: 999px;
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+
+.selo-aberto {
+  background: #dff1e4;
+  color: #14532d;
+}
+
+.selo-fechado {
+  background: #fbe3e3;
+  color: #8a1c1c;
+}
+
+/* 7. Formulários ----------------------------------------------------------- */
+form {
+  display: grid;
+  gap: 1.25rem;
+}
+
+fieldset {
+  min-width: 0;
+  margin: 0;
+  padding: 1.25rem;
+  background: var(--cor-creme);
+  border: 1px solid var(--cor-borda);
+  border-radius: var(--raio);
+}
+
+legend {
+  padding: 0 0.5rem;
+  color: var(--cor-verde-escuro);
+  font-family: var(--fonte-titulo);
+  font-size: 1.15rem;
+  font-weight: 700;
+}
+
+form p {
+  margin-bottom: 1rem;
+}
+
+form p:last-child {
+  margin-bottom: 0;
+}
+
+form br {
+  display: none;
+}
+
+label {
+  font-weight: 600;
+}
+
+input + label {
+  font-weight: 400;
+}
+
+input,
+select,
+textarea {
+  display: block;
+  width: 100%;
+  margin-top: 0.35rem;
+  padding: 0.65rem 0.8rem;
+  background: var(--cor-superficie);
+  border: 1.5px solid var(--cor-controle);
+  border-radius: 0.5rem;
+  color: var(--cor-texto);
+  font: inherit;
+  transition: border-color var(--transicao), background-color var(--transicao);
+}
+
+textarea {
+  min-height: 7rem;
+  resize: vertical;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+  display: inline-block;
+  width: 1.1rem;
+  height: 1.1rem;
+  margin: 0 0.5rem 0 0;
+  padding: 0;
+  vertical-align: middle;
+}
+
+input[type="range"] {
+  padding: 0;
+  background: transparent;
+  border: 0;
+}
+
+/* estados de validação (classe aplicada pelo JavaScript após o usuário interagir) */
+.campo-tocado:invalid {
+  background: #fff5f4;
+  border-color: var(--cor-erro);
+}
+
+.campo-tocado:valid {
+  border-color: var(--cor-sucesso);
+}
+
+.contador,
+.valor-faixa {
+  display: block;
+  margin-top: 0.25rem;
+  color: var(--cor-texto-suave);
+  font-size: 0.85rem;
+  text-align: right;
+}
+
+.valor-faixa {
+  color: var(--cor-rosa);
+  font-size: 1.05rem;
+  font-weight: 700;
+}
+
+.mensagem-form {
+  padding: 1rem 1.25rem;
+  background: var(--cor-verde-claro);
+  border-left: 4px solid var(--cor-sucesso);
+  border-radius: 0.5rem;
+}
+
+/* 8. Rodapé ---------------------------------------------------------------- */
+footer {
+  row-gap: 1.25rem;
+  padding: 2rem 0 1.25rem;
+  background: var(--cor-verde-escuro);
+  color: #e9f1ec;
+  font-size: 0.95rem;
+}
+
+footer address {
+  grid-column: 2;
+}
+
+footer nav {
+  grid-column: 3;
+  justify-self: end;
+}
+
+footer a {
+  color: #ffd9e3;
+}
+
+footer nav a {
+  color: #e9f1ec;
+}
+
+footer nav a:hover,
+footer a:hover {
+  color: #fff;
+}
+
+footer nav a:hover {
+  background: rgba(255, 255, 255, 0.12);
+}
+
+footer p {
+  grid-column: 2 / 4;
+  padding-top: 1rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  color: #bcd3c4;
+}
+
+/* 9. Responsivo ------------------------------------------------------------ */
+@media (max-width: 52em) {
+  header h1 {
+    font-size: 1.45rem;
+  }
+
+  .nav-toggle {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  .nav-recolhivel ul {
+    display: none;
+    flex-direction: column;
+    margin-top: 0.6rem;
+  }
+
+  .nav-recolhivel.aberto ul {
+    display: flex;
+  }
+
+  main {
+    padding-top: 1.25rem;
+  }
+
+  main > section,
+  main > article {
+    padding: 1.25rem;
+  }
+
+  main > section[aria-labelledby="boas-vindas"] h2 {
+    font-size: 1.8rem;
+  }
+
+  dl {
+    grid-template-columns: 1fr;
+  }
+
+  dt {
+    padding-bottom: 0;
+    border-bottom: 0;
+  }
+
+  footer address,
+  footer nav {
+    grid-column: 2 / 4;
+    justify-self: start;
+  }
+}

@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64" role="img" aria-labelledby="titulo-logo">
+  <title id="titulo-logo">Logotipo da Floricultura Flor-Extra</title>
+  <circle cx="32" cy="32" r="30" fill="#f8e3e9"/>
+  <path d="M32 62C32 50 31 44 32 36" fill="none" stroke="#2f5d3f" stroke-width="3" stroke-linecap="round"/>
+  <path d="M32 54C24 54 19 49 18 43C26 42 31 47 32 54Z" fill="#2f5d3f"/>
+  <path d="M32 50C39 50 44 46 45 40C38 39 33 43 32 50Z" fill="#3f7a54"/>
+  <g fill="#a82a55">
+    <ellipse cx="32" cy="14" rx="6" ry="9"/>
+    <ellipse cx="32" cy="14" rx="6" ry="9" transform="rotate(72 32 26)"/>
+    <ellipse cx="32" cy="14" rx="6" ry="9" transform="rotate(144 32 26)"/>
+    <ellipse cx="32" cy="14" rx="6" ry="9" transform="rotate(216 32 26)"/>
+    <ellipse cx="32" cy="14" rx="6" ry="9" transform="rotate(288 32 26)"/>
+  </g>
+  <circle cx="32" cy="26" r="6" fill="#f2b84b"/>
+</svg>

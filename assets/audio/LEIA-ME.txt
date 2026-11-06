@@ -1,0 +1,7 @@
+Coloque aqui o áudio institucional (mensagem de boas-vindas,
+jingle, ou trecho da entrevista) usado em contato.html:
+
+- boas-vindas-florextra.mp3 / .ogg
+
+Pode ser um áudio simples gravado no celular, apresentando a loja
+ou a equipe.
