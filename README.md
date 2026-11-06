@@ -81,8 +81,10 @@ Publicar o site no GitHub Pages e entender o funcionamento do processo de
   da página ou simplesmente dar o famoso erro 404.
 
 ## W3C Validator
+<img width="1365" height="767" alt="W3C validator" src="https://github.com/user-attachments/assets/f03ebf53-d3e9-46f7-abb0-cf11d6848328" />
 
 ## CSS Validation Service
+<img width="1365" height="767" alt="CSS validator" src="https://github.com/user-attachments/assets/62ffc51c-e645-453e-862b-ecea8bd6f75a" />
 
 ## Conclusão
 
