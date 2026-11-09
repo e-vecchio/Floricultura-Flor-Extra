@@ -49,6 +49,7 @@ acadêmico e fez uma breve entrevista. As respostas obtidas ajudaram a
 direcionar o conteúdo e a organização das páginas do site, especialmente as
 seções de Serviços, Casamentos, Eventos Corporativos e Jardinagem.
 
+
 ###  Prova de Contato
 
 <img width="240" height="180" alt="Imagem do contato" src="https://github.com/user-attachments/assets/7887acf1-dd84-43be-be6a-effc1150446e" />
