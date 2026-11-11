@@ -65,7 +65,7 @@ pastas: a página inicial fica na raiz, as demais em `paginas/` e os recursos
 (logo, imagens, vídeo, estilos e scripts) em `assets/`.
 
 ##### Uso de IA
-Usamos principalmente o Claude Sonnet 5.5 na parte de desenvolvimento do design inicial do site e para alguns detalhes estéticos em CSS.
+Utilizamos quase exclusivamente o Claude Sonnet 5.5 durante o desenvolvimento do design inicial do site, na estruturação e organização dos elementos visuais, ajustes de cores e detalhes estéticos em CSS.
 
 #### HTML
 
