@@ -77,10 +77,7 @@ telefone (`tel:`) e WhatsApp.
 
 #### CSS
 
-Usamos o CSS para dar identidade visual ao site e organizar o layout
-das páginas.
-
-
+Utilizamos o CSS para desenvolver a identidade visual da Floricultura Flor-Extra, aplicando cores, fontes, espaçamentos e elementos gráficos que transmitem elegância e delicadeza. Também organizamos o layout das páginas, garantindo uma apresentação harmoniosa, intuitiva e responsiva, facilitando a navegação e proporcionando uma melhor experiência ao usuário.
 
 #### JavaScript
 
