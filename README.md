@@ -14,10 +14,9 @@ Murilo Queiroz Braga
 
 https://e-vecchio.github.io/Floricultura-Flor-Extra/
 
-### Link da Apresentação:
+### Link do vídeo de apresentação:
 
-https://canva.link/7fa79e9udfzcz47
-
+https://youtu.be/Cef5OJibZiw
 
 ## Introdução
 
